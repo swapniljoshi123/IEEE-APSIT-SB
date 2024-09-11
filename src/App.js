@@ -1,24 +1,52 @@
-import logo from './logo.svg';
-import './App.css';
+import React, { useState } from 'react';
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+import Header from './components/Header';
+import Navbar from './components/Navbar';
+import Footer from './components/Footer';
+import Home from './pages/Home';
+import AboutUs from './pages/AboutUs';
+import Login from './components/LoginModal';
+import SignUp from './pages/SignUp';
+import Modal from './components/Modal';
+import EventModal from './components/EventModal';
+import SignUpModal from './components/SignUpModal';
+import LoginModal from './components/LoginModal';
 
 function App() {
+  const [showLoginModal, setShowLoginModal] = useState(false);
+  const [showSignUpModal, setShowSignUpModal] = useState(false);
+  const [showEventModal, setShowEventModal] = useState(false);
+
+  const openLoginModal = () => setShowLoginModal(true);
+  const closeLoginModal = () => setShowLoginModal(false);
+
+  const openSignUpModal = () => setShowSignUpModal(true);
+  const closeSignUpModal = () => setShowSignUpModal(false);
+
+  const openEventModal = () => setShowEventModal(true);
+  const closeEventModal = () => setShowEventModal(false);
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Router>
+      <div className={`App ${showLoginModal || showSignUpModal || showEventModal ? 'blurred' : ''}`}>
+        <Header />
+        <Navbar
+          openLoginModal={openLoginModal}
+          openSignUpModal={openSignUpModal}
+          openEventModal={openEventModal}
+        />
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/about-us" element={<AboutUs />} />
+          <Route path="/login" element={<Login />} />
+          {/* <Route path="/sign-up" element={<SignUp />} /> */}
+        </Routes>
+        <Footer />
+      </div>
+      <LoginModal show={showLoginModal} onClose={closeLoginModal} />
+      <SignUpModal show={showSignUpModal} onClose={closeSignUpModal} />
+      <EventModal show={showEventModal} onClose={closeEventModal} />
+    </Router>
   );
 }
 
