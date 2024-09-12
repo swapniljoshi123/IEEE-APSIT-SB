@@ -1,0 +1,18 @@
+{
+  "files": {
+    "main.css": "/IEEE-APSIT-SB/static/css/main.973d01d0.css",
+    "main.js": "/IEEE-APSIT-SB/static/js/main.14572e61.js",
+    "static/js/453.67ac9321.chunk.js": "/IEEE-APSIT-SB/static/js/453.67ac9321.chunk.js",
+    "static/media/IEEE-APSIT-LOGO.png": "/IEEE-APSIT-SB/static/media/IEEE-APSIT-LOGO.3ef9330696a712ec5578.png",
+    "static/media/IEEE_CS.jpg": "/IEEE-APSIT-SB/static/media/IEEE_CS.248ae6dc80ff9c0241a9.jpg",
+    "static/media/IEEE_WIE.png": "/IEEE-APSIT-SB/static/media/IEEE_WIE.cb50c006a8b85cf93db7.png",
+    "index.html": "/IEEE-APSIT-SB/index.html",
+    "main.973d01d0.css.map": "/IEEE-APSIT-SB/static/css/main.973d01d0.css.map",
+    "main.14572e61.js.map": "/IEEE-APSIT-SB/static/js/main.14572e61.js.map",
+    "453.67ac9321.chunk.js.map": "/IEEE-APSIT-SB/static/js/453.67ac9321.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.973d01d0.css",
+    "static/js/main.14572e61.js"
+  ]
+}
