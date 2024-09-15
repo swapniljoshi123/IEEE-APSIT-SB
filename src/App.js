@@ -5,11 +5,9 @@ import Navbar from './components/Navbar';
 import Footer from './components/Footer';
 import Home from './pages/Home';
 import AboutUs from './pages/AboutUs';
-import Login from './components/LoginModal';
-import SignUp from './pages/SignUp';
-import EventModal from './components/EventModal';
-import SignUpModal from './components/SignUpModal';
 import LoginModal from './components/LoginModal';
+import SignUpModal from './components/SignUpModal';
+import EventModal from './components/EventModal';
 
 function App() {
   const [showLoginModal, setShowLoginModal] = useState(false);
@@ -25,9 +23,13 @@ function App() {
   const openEventModal = () => setShowEventModal(true);
   const closeEventModal = () => setShowEventModal(false);
 
+  // Add 'blurred' class if any modal is open
+  const isBlurred = showLoginModal || showSignUpModal || showEventModal;
+
   return (
     <Router>
-      <div className="App">
+      {/* Apply 'blurred' class conditionally based on modal state */}
+      <div className={`App ${isBlurred ? 'blurred' : ''}`}>
         <Header />
         <Navbar
           openLoginModal={openLoginModal}
@@ -40,6 +42,8 @@ function App() {
         </Routes>
         <Footer />
       </div>
+
+      {/* Modals */}
       <LoginModal show={showLoginModal} onClose={closeLoginModal} />
       <SignUpModal show={showSignUpModal} onClose={closeSignUpModal} />
       <EventModal show={showEventModal} onClose={closeEventModal} />
