@@ -1,6 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import { FaHome, FaInfoCircle, FaSignInAlt, FaUserPlus, FaCalendarAlt } from 'react-icons/fa'; // Importing icons
+import { FaHome, FaInfoCircle, FaSignInAlt, FaUserPlus, FaCalendarAlt } from 'react-icons/fa';
+import ThemeToggle from './ThemeToggle'; // Importing ThemeToggle
 
 const Navbar = ({ openLoginModal, openSignUpModal, openEventModal }) => {
   return (
@@ -45,6 +46,7 @@ const Navbar = ({ openLoginModal, openSignUpModal, openEventModal }) => {
             >
               <FaCalendarAlt className="mr-2" /> Event Registration
             </button>
+            <ThemeToggle /> {/* Adding Theme Toggle Icon */}
           </div>
         </div>
       </nav>

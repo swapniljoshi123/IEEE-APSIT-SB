@@ -7,7 +7,6 @@ import Home from './pages/Home';
 import AboutUs from './pages/AboutUs';
 import Login from './components/LoginModal';
 import SignUp from './pages/SignUp';
-import Modal from './components/Modal';
 import EventModal from './components/EventModal';
 import SignUpModal from './components/SignUpModal';
 import LoginModal from './components/LoginModal';
@@ -28,7 +27,7 @@ function App() {
 
   return (
     <Router>
-      <div className={`App ${showLoginModal || showSignUpModal || showEventModal ? 'blurred' : ''}`}>
+      <div className="App">
         <Header />
         <Navbar
           openLoginModal={openLoginModal}
@@ -38,8 +37,6 @@ function App() {
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/about-us" element={<AboutUs />} />
-          <Route path="/login" element={<Login />} />
-          {/* <Route path="/sign-up" element={<SignUp />} /> */}
         </Routes>
         <Footer />
       </div>

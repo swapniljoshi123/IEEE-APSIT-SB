@@ -5,3 +5,17 @@
   filter: blur(8px);
   transition: filter 0s ease-in-out;
 }
+:root {
+  --background-color: white;
+  --text-color: black;
+}
+
+.dark {
+  --background-color: #1a202c; /* Dark background */
+  --text-color: white;          /* Light text */
+}
+
+body {
+  background-color: var(--background-color);
+  color: var(--text-color);
+}
