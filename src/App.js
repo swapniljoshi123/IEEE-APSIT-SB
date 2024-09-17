@@ -56,6 +56,7 @@ function App() {
       </div>
       <LoginModal show={showLoginModal} onClose={closeLoginModal} />
       <SignUpModal show={showSignUpModal} onClose={closeSignUpModal} />
+      
       <EventModal show={showEventModal} onClose={closeEventModal} />
     </Router>
   );
