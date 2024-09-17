@@ -28,11 +28,6 @@ const Footer = () => {
             <FaInstagram size={24} />
           </a>
         </div>
-
-        {/* APSIT Address or any other info can go here */}
-        <p className="text-sm text-gray-400">
-          APSIT-Thane,India
-        </p>
       </div>
     </footer>
   );

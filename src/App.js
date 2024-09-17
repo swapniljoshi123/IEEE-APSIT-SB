@@ -13,6 +13,7 @@ import EventModal from './components/EventModal';
 import SignUpModal from './components/SignUpModal';
 import LoginModal from './components/LoginModal';
 import MovingText from './components/MovingText';
+import CollegeLocation from './components/CollegeLocation';
 
 function App() {
   const [showLoginModal, setShowLoginModal] = useState(false);
@@ -50,7 +51,7 @@ function App() {
 
           {/* <Route path="/sign-up" element={<SignUp />} /> */}
         </Routes>
-        
+        <CollegeLocation />
         <Footer />
       </div>
       <LoginModal show={showLoginModal} onClose={closeLoginModal} />
