@@ -5,9 +5,14 @@ import Navbar from './components/Navbar';
 import Footer from './components/Footer';
 import Home from './pages/Home';
 import AboutUs from './pages/AboutUs';
-import LoginModal from './components/LoginModal';
-import SignUpModal from './components/SignUpModal';
+import Sign from './pages/Sign';
+import Login from './components/LoginModal';
+import SignUp from './pages/SignUp';
+import Modal from './components/Modal';
 import EventModal from './components/EventModal';
+import SignUpModal from './components/SignUpModal';
+import LoginModal from './components/LoginModal';
+import MovingText from './components/MovingText';
 
 function App() {
   const [showLoginModal, setShowLoginModal] = useState(false);
@@ -23,27 +28,31 @@ function App() {
   const openEventModal = () => setShowEventModal(true);
   const closeEventModal = () => setShowEventModal(false);
 
-  // Add 'blurred' class if any modal is open
-  const isBlurred = showLoginModal || showSignUpModal || showEventModal;
-
   return (
     <Router>
-      {/* Apply 'blurred' class conditionally based on modal state */}
-      <div className={`App ${isBlurred ? 'blurred' : ''}`}>
+      <div className={`App ${showLoginModal || showSignUpModal || showEventModal ? 'blurred' : ''}`}>
         <Header />
         <Navbar
           openLoginModal={openLoginModal}
           openSignUpModal={openSignUpModal}
           openEventModal={openEventModal}
         />
+        <div>
+      
+      <MovingText />
+      {/* Rest of your page */}
+    </div>
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/about-us" element={<AboutUs />} />
+          <Route path="/login" element={<Login />} />
+          {/* <Route path="/sign" element={<Sign />} /> */}
+
+          {/* <Route path="/sign-up" element={<SignUp />} /> */}
         </Routes>
+        
         <Footer />
       </div>
-
-      {/* Modals */}
       <LoginModal show={showLoginModal} onClose={closeLoginModal} />
       <SignUpModal show={showSignUpModal} onClose={closeSignUpModal} />
       <EventModal show={showEventModal} onClose={closeEventModal} />
