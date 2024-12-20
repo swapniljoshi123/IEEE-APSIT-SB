@@ -135,6 +135,14 @@ IEEE-APSIT-SB/
 3. Commit your changes (`git commit -m 'Add new feature'`).
 4. Push to the branch (`git push origin feature-name`).
 5. Open a pull request.
+   ![image](https://github.com/user-attachments/assets/929ec4cd-8352-4663-b7a9-2613c03003cf)
+   ![image](https://github.com/user-attachments/assets/04d541d3-b8b4-4820-870d-db2b9b8b6b7c)
+   ![image](https://github.com/user-attachments/assets/de4d4257-b3f8-4095-9e1e-c5ef1b0616db)
+   ![image](https://github.com/user-attachments/assets/da4c1d48-c99a-4cc8-9c87-b8c7413c93b3)
+   ![image](https://github.com/user-attachments/assets/c1d8e09a-687d-4672-9582-6d86071015d5)
+
+
+
 
 ## License
 
