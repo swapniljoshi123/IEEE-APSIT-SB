@@ -1,3 +1,4 @@
+
 # IEEE APSIT SB Project
 
 ## Overview
@@ -61,27 +62,35 @@ This repository contains the project for the **IEEE APSIT Student Branch (SB)**.
 ```bash
 git clone https://github.com/swapniljoshi123/IEEE-APSIT-SB.git
 cd IEEE-APSIT-SB
-💡 Install Dependencies
-bash
-Copy code
-npm install
-🔐 Set Up Environment Variables
-Create a .env file in the root directory and add the following variables:
+```
 
-plaintext
-Copy code
+### 💡 Install Dependencies
+
+```bash
+npm install
+```
+
+### 🔐 Set Up Environment Variables
+
+Create a `.env` file in the root directory and add the following variables:
+
+```plaintext
 MONGO_URI=<your-mongodb-connection-string>
 STRIPE_SECRET_KEY=<your-stripe-secret-key>
 STRIPE_PUBLISHABLE_KEY=<your-stripe-publishable-key>
-🚀 Start the Development Server
-bash
-Copy code
-npm run dev
-The application will be available at http://localhost:5173.
+```
 
-Folder Structure
-css
-Copy code
+### 🚀 Start the Development Server
+
+```bash
+npm run dev
+```
+
+The application will be available at `http://localhost:5173`.
+
+## Folder Structure
+
+```
 IEEE-APSIT-SB/
 ├── src/
 │   ├── components/
@@ -105,29 +114,36 @@ IEEE-APSIT-SB/
 ├── .env
 ├── package.json
 ├── README.md
-Usage
-Running the Application
-Access the home page to explore features.
-Use the navigation bar to visit different sections like Membership, Events, Resources, and Contact.
-💳 Payment Integration
-Navigate to the Membership or Events section.
-Enter the required details and complete the transaction securely using Stripe.
-Contributing
-Fork the repository.
-Create a feature branch (git checkout -b feature-name).
-Commit your changes (git commit -m 'Add new feature').
-Push to the branch (git push origin feature-name).
-Open a pull request.
-License
-This project is licensed under the MIT License. See the LICENSE file for more details.
+```
 
-Contact
+## Usage
+
+### Running the Application
+
+- Access the home page to explore features.
+- Use the navigation bar to visit different sections like **Membership**, **Events**, **Resources**, and **Contact**.
+
+### 💳 Payment Integration
+
+- Navigate to the **Membership** or **Events** section.
+- Enter the required details and complete the transaction securely using **Stripe**.
+
+## Contributing
+
+1. Fork the repository.
+2. Create a feature branch (`git checkout -b feature-name`).
+3. Commit your changes (`git commit -m 'Add new feature'`).
+4. Push to the branch (`git push origin feature-name`).
+5. Open a pull request.
+
+## License
+
+This project is licensed under the **MIT License**. See the `LICENSE` file for more details.
+
+## Contact
+
 For any inquiries or support, please contact:
 
-Swapnil Joshi
-Email: swapniljoshi@example.com
-GitHub: swapniljoshi123
-vbnet
-Copy code
-
-You can copy and paste the above content into your `README.md` file. It is fully structured 
+- **Swapnil Joshi**
+- Email: [21104005.swapnil.joshi@gmail.com](mailto:21104005.swapnil.joshi@gmail.com)
+- GitHub: [swapniljoshi123](https://github.com/swapniljoshi123)
