@@ -1,70 +1,162 @@
-# Getting Started with Create React App
+IEEE APSIT SB Project
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Overview
 
-## Available Scripts
+This repository contains the project for the IEEE APSIT Student Branch (SB). The project aims to streamline various IEEE-related activities, including event management, membership handling, and resource sharing, with a user-friendly platform. Developed using React.js, it integrates modern tools and technologies to deliver a seamless and responsive web application.
 
-In the project directory, you can run:
+Features
 
-### `npm start`
+User-Friendly Interface
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+Intuitive design with clear navigation.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+Responsive layout for mobile and desktop devices.
 
-### `npm test`
+Comprehensive Components
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+Home Page: Overview of the platform.
 
-### `npm run build`
+About Us: Details about the IEEE APSIT SB.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+Contact: Reach out to the team.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+Events: Manage and participate in upcoming events.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+Membership: Membership status tracking and details.
 
-### `npm run eject`
+Resources: Access shared resources and documentation.
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+FAQs: Answers to common queries.
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+Sign-Up/Sign-In: User authentication and registration.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+Event Management
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+Create, update, and manage events.
 
-## Learn More
+Participant registration and tracking.
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+Membership Handling
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+Manage member details.
 
-### Code Splitting
+Enable and track membership renewals.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+Payment Integration
 
-### Analyzing the Bundle Size
+Secure payment gateway for membership fees and event registrations.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+Technologies Used
 
-### Making a Progressive Web App
+Frontend
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+React.js: For building the user interface.
 
-### Advanced Configuration
+Vite: As the development environment and build tool.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+Tailwind CSS: For styling and responsive design.
 
-### Deployment
+Backend
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+Node.js: For handling server-side operations.
 
-### `npm run build` fails to minify
+Express.js: As the web framework for APIs.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+MongoDB: For the database to store application data.
+
+Payment Gateway
+
+Stripe: For secure and reliable payment processing.
+
+Installation
+
+Clone the Repository:
+
+git clone https://github.com/swapniljoshi123/IEEE-APSIT-SB.git
+cd IEEE-APSIT-SB
+
+Install Dependencies:
+
+npm install
+
+Set Up Environment Variables:
+
+Create a .env file in the root directory.
+
+Add the following variables:
+
+MONGO_URI=<your-mongodb-connection-string>
+STRIPE_SECRET_KEY=<your-stripe-secret-key>
+STRIPE_PUBLISHABLE_KEY=<your-stripe-publishable-key>
+
+Start the Development Server:
+
+npm run dev
+
+The application will be available at http://localhost:5173.
+
+Folder Structure
+
+IEEE-APSIT-SB/
+├── src/
+│   ├── components/
+│   │   ├── Header.jsx
+│   │   ├── Footer.jsx
+│   │   ├── Profile.jsx
+│   │   ├── Contact.jsx
+│   ├── pages/
+│   │   ├── AboutUs.js
+│   │   ├── Contact.js
+│   │   ├── Events.js
+│   │   ├── FAQs.js
+│   │   ├── Home.js
+│   │   ├── Membership.js
+│   │   ├── Resources.js
+│   │   ├── Sign.js
+│   │   ├── SignUp.js
+│   ├── App.jsx
+│   ├── main.jsx
+│   ├── index.css
+├── .env
+├── package.json
+├── README.md
+
+Usage
+
+Running the Application
+
+Access the home page to explore features.
+
+Use the navigation bar to visit different sections like Membership, Events, Resources, and Contact.
+
+Payment Integration
+
+Navigate to the Membership or Events section.
+
+Enter the required details and complete the transaction securely using Stripe.
+
+Contributing
+
+Fork the repository.
+
+Create a feature branch (git checkout -b feature-name).
+
+Commit your changes (git commit -m 'Add new feature').
+
+Push to the branch (git push origin feature-name).
+
+Open a pull request.
+
+License
+
+This project is licensed under the MIT License. See the LICENSE file for more details.
+
+Contact
+
+For any inquiries or support, please contact:
+
+Swapnil Joshi
+
+Email: swapniljoshi@example.com
+
+GitHub: swapniljoshi123
